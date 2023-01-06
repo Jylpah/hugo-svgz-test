@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head><title>{{ .Title }}</title></head>
+<body>
+<table width="100%">
+<tbody>
+<tr><td>SVGZ Test</td></tr>
+<tr>
+  <td align="center">PLAIN SVG via img</td>
+  <td align="center">COMPRESSED SVGZ via img</td>
+</tr>
+<tr>
+<td><img src="/sample.svg"></td>
+<td><img src="/sample-compressed.svgz"></td>
+</tr>
+<tr>
+  <td align="center">PLAIN SVG via object data</td>
+  <td align="center">COMPRESSED SVGZ via object data</td>
+</tr>
+<tr>
+<td><object data="/sample.svg"></object></td>
+<td><object data="/sample-compressed.svgz"></object></td>
+</tr>
+<tbody>
+</table>
+</body>

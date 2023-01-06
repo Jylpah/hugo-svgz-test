@@ -1,0 +1,15 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+disableKinds = ["page","section","taxonomy","term","RSS"]
+
+
+[server]
+[[server.headers]]
+  for = '*.svgz'
+  [server.headers.values]
+    Content-Encoding = 'gzip'
+    Vary = 'Accept-Encoding'
+
+[mediaTypes."image/svg+xml"]
+  suffixes = ["svg","svgz"]
