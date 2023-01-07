@@ -1,3 +1,11 @@
+# Issue with SVGZ format
+
+The issue with SVGZ format is that the the file itself is `gzip`compressed and 
+that many web servers (like GitHub Pages) apply additional `gzip` compression on it. 
+The 2nd `gzip` compression is just waste of resources and the correct way to declare it in the 
+HTTP response headers is to se `Content-Encoding: gzip , gzip`. However, iOS Safari (16.x) does 
+not support this even all the major desktop browsers (Chrome, Firefox, Edge) do support it. 
+
 # SVGZ Hugo test
 
 Run
